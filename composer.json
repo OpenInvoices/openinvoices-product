@@ -1,20 +1,20 @@
 {
-    "name": "openinvoices/openinvoices-webservice-rest",
-    "description": "Tax module for OpenInvoices",
+    "name": "openinvoices/openinvoices-product",
+    "description": "Product catalogue module for OpenInvoices",
     "license": "BSD-3-Clause",
     "keywords": [
         "zf2",
         "invoice",
-        "tax"
+        "product"
     ],
-    "homepage": "https://github.com/OpenInvoices/openinvoices-tax",
+    "homepage": "https://github.com/OpenInvoices/openinvoices-product",
     "require": {
         "php": "^5.5 || ^7.0",
-        "zendframework/zend-mvc": "^3.0.1",
+        "zendframework/zend-mvc": "^3.0.1"
     },
     "autoload": {
         "psr-4": {
-            "OpenInvoices\\Tax\\": "src/"
+            "OpenInvoices\\Product\\": "src/"
         }
     }
 }

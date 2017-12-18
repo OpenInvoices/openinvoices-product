@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace OpenInvoices\Tax;
+namespace OpenInvoices\Product;
 
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -13,10 +13,10 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'tax' => [
+            'product' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/tax[/:action]',
+                    'route'    => '/product[/:action]',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
                         'action'     => 'index',
@@ -28,8 +28,8 @@ return [
     'navigation' => [
         'default' => [
             [
-                'label' => 'Taxes',
-                'route' => 'tax',
+                'label' => 'Products',
+                'route' => 'product',
             ]
         ]
     ],
